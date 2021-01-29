@@ -92,7 +92,7 @@ def play(game, x_player, o_player, print_game=True):
                 return letter
 
             # after we made our move we need to alterate letters
-            leter = 'O' if letter == 'X' else 'X' # switches players
+            letter = 'O' if letter == 'X' else 'X' # switches players
 
         # tiny break 
         time.sleep(0.8)
