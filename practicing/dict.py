@@ -29,3 +29,4 @@ age = 12
 s = 'minor' if age < 21 else 'adult'
 
 'yes' if ('qux' in ['foo', 'bar', 'baz']) else 'no'
+
