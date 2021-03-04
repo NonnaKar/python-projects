@@ -68,28 +68,3 @@ print(family_details)
 
 
 #******************* End your code here **********************
-
-
-
-
-
-
-# get k and v of family_ids
-# family_member = list(family_ids.keys())
-# id_number = list(family_ids.values())
-
-# # convert into a new dictionary 
-# family_details = dict(zip(family_member, id_number))
-# # Output: {'Mother': '#001', 'Father': '#002', 'Brother': '#111', 'Sister': '#112'}
-
-# #  iterate over the key-value pairs 
-# for key, value in family_details.items():
-#     print(f"relation: {key}; id: {value}")
-
-# convert k into v - now we have two list with values 
-# create k for 'relation' 
-
-
-# create k for id 
-# merge k and v into a new dictionary called family_details using zip
-
