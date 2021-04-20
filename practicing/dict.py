@@ -183,4 +183,3 @@ vegetable_prices = {'pepper': 0.20, 'onion': 0.55}
 # You can use this feature to iterate through multiple dictionaries
 for k, v in {**vegetable_prices, **fruit_prices}.items():
   print(k, '->', v)
-  
