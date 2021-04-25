@@ -45,7 +45,7 @@ class Car():
         self.engine = None
 
     def __str__(self):
-        return f'{self.model} | {self.tires} | {self.engine}'
+        return f"{self.model} | {self.tires} | {self.engine}"
 
 
 builder = SkyLarkBuilder()
