@@ -12,7 +12,7 @@ class Borg:
 
 class Singleton(Borg):  # Inherits from the Borg class
     # * This class now shares all its attributes among its various instances
-    # This essensially makes the singleton objects an object-oriented global variable
+    # * This essensially makes the singleton objects an object-oriented global variable
 
     def __init__(self, **kwargs):
         Borg.__init__(self)

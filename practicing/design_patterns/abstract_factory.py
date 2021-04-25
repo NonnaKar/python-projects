@@ -11,6 +11,15 @@ class Dog:
         return "Dog"
 
 
+class Cat:
+    # One of the objects to be returned
+    def speak(self):
+        return "Meow!"
+
+    def __str__(self):
+        return "Cat"
+
+
 class DogFactory:
     # Concrete factory
     def get_pet(self):
@@ -18,6 +27,15 @@ class DogFactory:
 
     def get_food(self):
         return "Dog Food!"
+
+
+class CatFactory:
+    # Concrete factory
+    def get_pet(self):
+        return Cat()
+
+    def get_food(self):
+        return "Cat Food!"
 
 
 class PetStore:
@@ -38,6 +56,7 @@ class PetStore:
 
 # todo: Create a concrete factory
 factory = DogFactory()
+factory = CatFactory()
 
 # todo: Create a pet store housing our abstract factory
 shop = PetStore(factory)
