@@ -1,0 +1,3 @@
+
+# * Structural patterns
+# * Decorator example

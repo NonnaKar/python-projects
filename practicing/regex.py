@@ -28,17 +28,17 @@ for line in text:
         print(line)
 
 # Example 2
-#Check if the string starts with "The" and ends with "Spain":
+# Check if the string starts with "The" and ends with "Spain":
 txt = "The rain in Spain"
 x = re.search("^The.*Spain$", txt)
 
 if x:
-  print("YES! We have a match!")
+    print("YES! We have a match!")
 else:
-  print("No match")
+    print("No match")
 
 # Exampple 3
-#Return a list containing every occurrence of "ai":
+# Return a list containing every occurrence of "ai":
 txt = "The rain in Spain"
 x = re.findall("ai", txt)
 print(x)
@@ -59,31 +59,31 @@ x = re.split("\s", txt, 1)
 print(x)
 
 # Example 7
-#Replace all white-space characters with the digit "9":
+# Replace all white-space characters with the digit "9":
 txt = "The rain in Spain"
 x = re.sub("\s", "9", txt)
 print(x)
 
 # Example 8
-#Replace the first two occurrences of a white-space character with the digit 9:
+# Replace the first two occurrences of a white-space character with the digit 9:
 txt = "The rain in Spain"
 x = re.sub("\s", "9", txt, 2)
 print(x)
 
 # Example 9
-#Search for an upper case "S" character in the beginning of a word, and print its position:
+# Search for an upper case "S" character in the beginning of a word, and print its position:
 txt = "The rain in Spain"
 x = re.search(r"\bS\w+", txt)
 print(x.span())
 
 # Example 10
-#The string property returns the search string:
+# The string property returns the search string:
 txt = "The rain in Spain"
 x = re.search(r"\bS\w+", txt)
 print(x.string)
 
 # Example 11
-#Search for an upper case "S" character in the beginning of a word, and print the word:
+# Search for an upper case "S" character in the beginning of a word, and print the word:
 txt = "The rain in Spain"
 x = re.search(r"\bS\w+", txt)
 print(x.group())

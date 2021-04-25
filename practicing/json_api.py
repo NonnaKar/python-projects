@@ -17,11 +17,11 @@ while True:
 
     json_status = json_data['status']
     print('API Status: ' + json_status + '\n')
-    
+
     if json_status == 'OK':
         for each in json_data['results'][0]['address_components']:
             print(each['long_name'])
-             
+
         formatted_address = json_data['results'][0]['formatted_address']
         print()
         print(formatted_address)

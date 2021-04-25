@@ -1,5 +1,7 @@
-# Sorting Numbers
+
+# * Sorting Numbers
 # Example 1
+from collections import namedtuple
 numbers = [6, 9, 3, 1]
 s = sorted(numbers)
 print(s)
@@ -15,7 +17,7 @@ print(num_set_sorted)
 print(tuple(num_tuple_sorted))
 print(set(num_set_sorted))
 
-# Sorting Strings
+# * Sorting Strings
 # Example 1
 string_number_value = '34521'
 string_value = 'I like to sort'
@@ -24,7 +26,7 @@ sorted_string = sorted(string_value)
 print(sorted_string_number)
 print(sorted_string)
 
-# sorted() With a key Argument
+# * sorted() With a key Argument
 # Example 1
 words = ['banana', 'pie', 'Washington', 'book']
 s = sorted(words, key=len)
@@ -38,7 +40,6 @@ print(s)
 print(k)
 
 # Example 3
-from collections import namedtuple
 
 StudentFinal = namedtuple('StudentFinal', 'name grade')
 bill = StudentFinal('Bill', 90)
@@ -48,15 +49,15 @@ students = [bill, patty, bart]
 x = sorted(students, key=lambda x: getattr(x, 'grade'), reverse=True)
 print(x)
 
-# Using sort()
+# * Using sort()
 # Example 1
-phrases = ['when in rome', 'what goes around comes around', 'all is fair in love and war']
+phrases = ['when in rome', 'what goes around comes around',
+           'all is fair in love and war']
 phrases.sort(key=lambda x: x.split()[2][1], reverse=True)
 print(phrases)
 
-# When to Use sorted() and When to Use .sort()
+# * When to Use sorted() and When to Use .sort()
 # Example 1
-from collections import namedtuple
 
 Runner = namedtuple('Runner', 'bibnumber duration')
 runners = []
