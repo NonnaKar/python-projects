@@ -35,6 +35,7 @@ class Core(Subject):
     @temp.setter
     def temp(self, temp):
         self._temp = temp
+        self.notify()
 
 
 class TempViewer:
